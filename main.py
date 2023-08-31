@@ -2,11 +2,9 @@ import json
 
 import requests
 from bs4 import BeautifulSoup
-from rich.pretty import pprint
 
 base_url = "https://vipergirls.to"
 threat_url = f"{base_url}/threads/5842541-VlXEN-Photo-Collection"
-# save from base url
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 res = requests.get(threat_url, headers=headers)
 res.raise_for_status()
