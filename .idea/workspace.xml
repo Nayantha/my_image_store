@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a61a532-0b85-400c-800b-78600e91aa4c" name="Changes" comment="get the first page." />
+    <list default="true" id="8a61a532-0b85-400c-800b-78600e91aa4c" name="Changes" comment="ide auto updated file.">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1693461866347</updated>
-      <workItem from="1693461868594" duration="2812000" />
+      <workItem from="1693461868594" duration="3174000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit.">
       <created>1693462703390</created>
@@ -158,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693475414284</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ide auto updated file.">
+      <created>1693475958427</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1693475958427</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,8 +191,8 @@
     <MESSAGE value="add a file to describe how the data generated is stored." />
     <MESSAGE value="add visual representation of data." />
     <MESSAGE value="add the main logic in simple format." />
-    <MESSAGE value="ide auto updated file." />
     <MESSAGE value="get the first page." />
-    <option name="LAST_COMMIT_MESSAGE" value="get the first page." />
+    <MESSAGE value="ide auto updated file." />
+    <option name="LAST_COMMIT_MESSAGE" value="ide auto updated file." />
   </component>
 </project>
