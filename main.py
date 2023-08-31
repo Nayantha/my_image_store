@@ -1,3 +1,5 @@
+import json
+
 import requests
 from bs4 import BeautifulSoup
 from rich.pretty import pprint
@@ -17,7 +19,19 @@ post_contents = [
         ]
     } for post in soup.select("#postlist > ol#posts > li.postcontainer blockquote.postcontent.restore")
     if post.select_one("div > font") and post.select("a > img")]
-# pprint(post_contents)
+new_data = {
+    threat_url: post_contents
+}
+try:
+    with open("data.json", "r") as data_file:
+        data = json.load(data_file)
+except FileNotFoundError:
+    with open("data.json", "w") as data_file:
+        json.dump(new_data, data_file, indent=4)
+else:
+    data.update(new_data)
+    with open("data.json", "w") as data_file:
+        json.dump(data, data_file, indent=4)
 next_page = soup.select_one("#pagination_bottom .prev_next > a")
 next_page = f"{base_url}/{next_page.get('href')}" if next_page else None
 # save data from current url
