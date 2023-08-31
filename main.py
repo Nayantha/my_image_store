@@ -25,9 +25,7 @@ while next_page_url:
             ]
         } for post in soup.select("#postlist > ol#posts > li.postcontainer blockquote.postcontent.restore")
         if post.select_one("div > font") and post.select("a > img")]
-    data_from_pages = {
-        next_page_url: post_contents
-    }
+    data_from_pages[next_page_url] = post_contents
     try:
         with open("data.json", "r") as data_file:
             data = json.load(data_file)
