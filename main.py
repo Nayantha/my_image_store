@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 base_url = "https://vipergirls.to"
 threat_url = f"{base_url}/threads/5842541-VlXEN-Photo-Collection"
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+next_page_url = "first try"
 res = requests.get(threat_url, headers=headers)
 res.raise_for_status()
 soup = BeautifulSoup(res.text, "html.parser")
@@ -30,5 +31,5 @@ else:
     data.update(new_data)
     with open("data.json", "w") as data_file:
         json.dump(data, data_file, indent=4)
-next_page = soup.select_one("#pagination_bottom .prev_next > a")
-next_page = f"{base_url}/{next_page.get('href')}" if next_page else None
+next_page_url = soup.select_one("#pagination_bottom .prev_next > a")
+next_page_url = f"{base_url}/{next_page_url.get('href')}" if next_page_url else None
