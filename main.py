@@ -24,7 +24,10 @@ while next_page_url:
         {
             "title": post.select_one("div > font").get_text(),
             "image_links": [
-                a_tag.get("href") for a_tag in post.select("a") if a_tag.select("img")
+                {
+                    "image_link": a_tag.get("href"),
+                    "preview_image_link": a_tag.select_one("img").get("src")
+                } for a_tag in post.select("a") if a_tag.select("img")
             ]
         } for post in soup.select("#postlist > ol#posts > li.postcontainer blockquote.postcontent.restore")
         if post.select_one("div > font") and post.select("a > img")]
