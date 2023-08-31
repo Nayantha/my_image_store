@@ -1,4 +1,5 @@
 import json
+from collections import OrderedDict
 
 import requests
 from bs4 import BeautifulSoup
@@ -6,7 +7,7 @@ from bs4 import BeautifulSoup
 base_url = "https://vipergirls.to"
 next_page_url = f"{base_url}/threads/5842541-VlXEN-Photo-Collection"
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
-data_from_pages = {}
+data_from_pages = OrderedDict()
 try:
     with open("data.json", "r") as data_file:
         data_from_pages = json.load(data_file)
