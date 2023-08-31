@@ -13,9 +13,10 @@ try:
 except FileNotFoundError:
     with open("data.json", "w") as data_file:
         json.dump(data_from_pages, data_file, indent=4)
-last_url_visited_in_file = data_from_pages[thread_url].get("next_url_to_visit")
-if last_url_visited_in_file:
-    next_page_url = last_url_visited_in_file
+try:
+    next_page_url = data_from_pages.get(thread_url).get("next_url_to_visit")
+except AttributeError:
+    data_from_pages[thread_url] = {}
 while next_page_url:
     res = requests.get(next_page_url, headers=headers)
     res.raise_for_status()
