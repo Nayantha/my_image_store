@@ -26,10 +26,10 @@ while next_page_url:
         } for post in soup.select("#postlist > ol#posts > li.postcontainer blockquote.postcontent.restore")
         if post.select_one("div > font") and post.select("a > img")]
     data_from_pages[next_page_url] = post_contents
+    next_page_url = soup.select_one("#pagination_bottom .prev_next > a")
+    next_page_url = f"{base_url}/{next_page_url.get('href')}" if next_page_url else None
     with open("data.json", "r") as data_file:
         data = json.load(data_file)
     data.update(data_from_pages)
     with open("data.json", "w") as data_file:
         json.dump(data, data_file, indent=4)
-    next_page_url = soup.select_one("#pagination_bottom .prev_next > a")
-    next_page_url = f"{base_url}/{next_page_url.get('href')}" if next_page_url else None
