@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a61a532-0b85-400c-800b-78600e91aa4c" name="Changes" comment="add a file to describe how the data generated is stored." />
+    <list default="true" id="8a61a532-0b85-400c-800b-78600e91aa4c" name="Changes" comment="ide auto updated file." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1693461866347</updated>
-      <workItem from="1693461868594" duration="1211000" />
+      <workItem from="1693461868594" duration="1873000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit.">
       <created>1693462703390</created>
@@ -102,7 +102,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693463044007</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add visual representation of data.">
+      <created>1693463552774</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693463552774</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ide auto updated file.">
+      <created>1693463681296</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693463681296</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +127,8 @@
     <MESSAGE value="add pycharm ide files to gitignore list." />
     <MESSAGE value="remove default code." />
     <MESSAGE value="add a file to describe how the data generated is stored." />
-    <option name="LAST_COMMIT_MESSAGE" value="add a file to describe how the data generated is stored." />
+    <MESSAGE value="add visual representation of data." />
+    <MESSAGE value="ide auto updated file." />
+    <option name="LAST_COMMIT_MESSAGE" value="ide auto updated file." />
   </component>
 </project>
