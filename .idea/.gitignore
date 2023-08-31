@@ -7,6 +7,6 @@
 /dataSources/
 /dataSources.local.xml
 #Pycharm ide files
-/.idea
+../.idea
 # generated files
 ../data.json
