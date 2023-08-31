@@ -8,12 +8,10 @@
 ```
 
 ```
-├── url
-│   ├── image links
-│   │   └── show
-│   │   │   └── image link
-│   │   └── hide
-│   │   │   └── image link
+├── thread
+│   ├── page
+│   │   ├── image links (high resolution)
+│   │   └── image (low resolution)
 ```
 
 ```
