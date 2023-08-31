@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a61a532-0b85-400c-800b-78600e91aa4c" name="Changes" comment="add next page url and fine tune drilling to image links.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8a61a532-0b85-400c-800b-78600e91aa4c" name="Changes" comment="add a key in the file to keep track of the next url to go next.">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1693461866347</updated>
-      <workItem from="1693461868594" duration="6149000" />
+      <workItem from="1693461868594" duration="7958000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit.">
       <created>1693462703390</created>
@@ -189,11 +188,126 @@
       <option name="project" value="LOCAL" />
       <updated>1693478651704</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add json read update write methods.">
+      <created>1693479562461</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1693479562461</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add data file.">
+      <created>1693479701051</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1693479701051</updated>
+    </task>
+    <task id="LOCAL-00019" summary="remove a comment line.">
+      <created>1693479849343</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1693479849343</updated>
+    </task>
+    <task id="LOCAL-00020" summary="remove the rest of comments.">
+      <created>1693479878835</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1693479878835</updated>
+    </task>
+    <task id="LOCAL-00021" summary="rename next_page variable to next_page_url.">
+      <created>1693479939321</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1693479939322</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add the scraping and url/data retrieving logic to a while loop.">
+      <created>1693479996688</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1693479996689</updated>
+    </task>
+    <task id="LOCAL-00023" summary="replace threat_url with next_page_url.">
+      <created>1693480069221</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1693480069221</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add logic to read data from the json file.">
+      <created>1693480200661</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1693480200661</updated>
+    </task>
+    <task id="LOCAL-00025" summary="replace new_data with data_from_pages.">
+      <created>1693480277948</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1693480277948</updated>
+    </task>
+    <task id="LOCAL-00026" summary="change the existing logic with adding key value to another dict.">
+      <created>1693480333667</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1693480333667</updated>
+    </task>
+    <task id="LOCAL-00027" summary="change the save to json file inside the while loop.">
+      <created>1693480538120</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1693480538120</updated>
+    </task>
+    <task id="LOCAL-00028" summary="move the json related logic to the bottom of while loop.">
+      <created>1693480613685</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1693480613685</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add the next page url to the json file with an empty list as value.">
+      <created>1693480698804</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1693480698804</updated>
+    </task>
+    <task id="LOCAL-00030" summary="change the type of data_from_pages to an OrderedDict.">
+      <created>1693480827406</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1693480827406</updated>
+    </task>
+    <task id="LOCAL-00031" summary="undo the type change.">
+      <created>1693480913813</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1693480913813</updated>
+    </task>
+    <task id="LOCAL-00032" summary="add a key in the file to keep track of the next url to go next.">
+      <created>1693481056415</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1693481056415</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -207,8 +321,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial Commit." />
-    <MESSAGE value="add pycharm ide files to gitignore list." />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="remove default code." />
     <MESSAGE value="add a file to describe how the data generated is stored." />
     <MESSAGE value="add visual representation of data." />
@@ -218,9 +332,28 @@
     <MESSAGE value="add BeautifulSoup and get the tags needed." />
     <MESSAGE value="move file to .idea file." />
     <MESSAGE value="add next page url and fine tune drilling to image links." />
-    <option name="LAST_COMMIT_MESSAGE" value="add next page url and fine tune drilling to image links." />
+    <MESSAGE value="add json read update write methods." />
+    <MESSAGE value="add data file." />
+    <MESSAGE value="remove a comment line." />
+    <MESSAGE value="remove the rest of comments." />
+    <MESSAGE value="rename next_page variable to next_page_url." />
+    <MESSAGE value="add the scraping and url/data retrieving logic to a while loop." />
+    <MESSAGE value="replace threat_url with next_page_url." />
+    <MESSAGE value="add logic to read data from the json file." />
+    <MESSAGE value="replace new_data with data_from_pages." />
+    <MESSAGE value="change the existing logic with adding key value to another dict." />
+    <MESSAGE value="change the save to json file inside the while loop." />
+    <MESSAGE value="move the json related logic to the bottom of while loop." />
+    <MESSAGE value="add the next page url to the json file with an empty list as value." />
+    <MESSAGE value="change the type of data_from_pages to an OrderedDict." />
+    <MESSAGE value="undo the type change." />
+    <MESSAGE value="add a key in the file to keep track of the next url to go next." />
+    <option name="LAST_COMMIT_MESSAGE" value="add a key in the file to keep track of the next url to go next." />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/my_image_store$main.coverage" NAME="main Coverage Results" MODIFIED="1693478478540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/my_image_store$main.coverage" NAME="main Coverage Results" MODIFIED="1693480149790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
