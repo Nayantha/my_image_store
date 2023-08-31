@@ -4,11 +4,10 @@ import requests
 from bs4 import BeautifulSoup
 
 base_url = "https://vipergirls.to"
-threat_url = f"{base_url}/threads/5842541-VlXEN-Photo-Collection"
+next_page_url = f"{base_url}/threads/5842541-VlXEN-Photo-Collection"
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
-next_page_url = "first try"
 while next_page_url:
-    res = requests.get(threat_url, headers=headers)
+    res = requests.get(next_page_url, headers=headers)
     res.raise_for_status()
     soup = BeautifulSoup(res.text, "html.parser")
     post_contents = [
@@ -20,7 +19,7 @@ while next_page_url:
         } for post in soup.select("#postlist > ol#posts > li.postcontainer blockquote.postcontent.restore")
         if post.select_one("div > font") and post.select("a > img")]
     new_data = {
-        threat_url: post_contents
+        next_page_url: post_contents
     }
     try:
         with open("data.json", "r") as data_file:
