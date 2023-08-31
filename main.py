@@ -32,5 +32,3 @@ else:
         json.dump(data, data_file, indent=4)
 next_page = soup.select_one("#pagination_bottom .prev_next > a")
 next_page = f"{base_url}/{next_page.get('href')}" if next_page else None
-# save data from current url
-# repeat until meet end
