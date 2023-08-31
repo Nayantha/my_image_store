@@ -13,6 +13,9 @@ try:
 except FileNotFoundError:
     with open("data.json", "w") as data_file:
         json.dump(data_from_pages, data_file, indent=4)
+last_url_visited_in_file = data_from_pages.get("next_url_to_visit")
+if last_url_visited_in_file:
+    next_page_url = last_url_visited_in_file
 while next_page_url:
     res = requests.get(next_page_url, headers=headers)
     res.raise_for_status()
