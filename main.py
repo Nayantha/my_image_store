@@ -25,7 +25,7 @@ while next_page_url:
             ]
         } for post in soup.select("#postlist > ol#posts > li.postcontainer blockquote.postcontent.restore")
         if post.select_one("div > font") and post.select("a > img")]
-    new_data = {
+    data_from_pages = {
         next_page_url: post_contents
     }
     try:
@@ -33,9 +33,9 @@ while next_page_url:
             data = json.load(data_file)
     except FileNotFoundError:
         with open("data.json", "w") as data_file:
-            json.dump(new_data, data_file, indent=4)
+            json.dump(data_from_pages, data_file, indent=4)
     else:
-        data.update(new_data)
+        data.update(data_from_pages)
         with open("data.json", "w") as data_file:
             json.dump(data, data_file, indent=4)
     next_page_url = soup.select_one("#pagination_bottom .prev_next > a")
