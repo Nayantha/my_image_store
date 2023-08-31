@@ -6,6 +6,16 @@
 │   │   └── hide
 │   │   │   └── image link
 ```
+
+```
+├── url
+│   ├── image links
+│   │   └── show
+│   │   │   └── image link
+│   │   └── hide
+│   │   │   └── image link
+```
+
 ```
 /
 ├── public/
