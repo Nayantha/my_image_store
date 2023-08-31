@@ -31,7 +31,7 @@ while next_page_url:
     data_from_pages[next_page_url] = post_contents
     next_page_url = soup.select_one("#pagination_bottom .prev_next > a")
     next_page_url = f"{base_url}/{next_page_url.get('href')}" if next_page_url else None
-    data_from_pages[next_page_url] = []
+    data_from_pages["next_url_to_visit"] = next_page_url
     with open("data.json", "r") as data_file:
         data = json.load(data_file)
     data.update(data_from_pages)
