@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a61a532-0b85-400c-800b-78600e91aa4c" name="Changes" comment="ide auto updated file.">
+    <list default="true" id="8a61a532-0b85-400c-800b-78600e91aa4c" name="Changes" comment="add BeautifulSoup and get the tags needed.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1693461866347</updated>
-      <workItem from="1693461868594" duration="3174000" />
+      <workItem from="1693461868594" duration="5424000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit.">
       <created>1693462703390</created>
@@ -167,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693475958427</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add BeautifulSoup and get the tags needed.">
+      <created>1693476285099</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1693476285099</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +201,10 @@
     <MESSAGE value="add the main logic in simple format." />
     <MESSAGE value="get the first page." />
     <MESSAGE value="ide auto updated file." />
-    <option name="LAST_COMMIT_MESSAGE" value="ide auto updated file." />
+    <MESSAGE value="add BeautifulSoup and get the tags needed." />
+    <option name="LAST_COMMIT_MESSAGE" value="add BeautifulSoup and get the tags needed." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/my_image_store$main.coverage" NAME="main Coverage Results" MODIFIED="1693478478540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
