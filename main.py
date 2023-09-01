@@ -73,3 +73,4 @@ while next_page_url:
     #     json.dump(data, data_file, indent=4)
     break
 database_connection.commit()
+database_connection.close()
