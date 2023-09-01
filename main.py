@@ -1,7 +1,11 @@
+import json
+
 import requests
 from bs4 import BeautifulSoup
 
 base_url = "https://vipergirls.to"
+with open("links_to_img_urls.json", "r") as data_file:
+    links_to_scrape = json.load(data_file)
 next_page_url = thread_url = f"{base_url}/threads/5842541-VlXEN-Photo-Collection"
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 data_from_pages = {}
