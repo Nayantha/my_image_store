@@ -11,7 +11,7 @@ database_connection = mysql.connector.connect(
     password=os.getenv("password"),
     database=os.getenv("database")
 )
-
+database_cursor = database_connection.cursor()
 base_url = "https://vipergirls.to"
 with open("links_to_img_urls.json", "r") as data_file:
     links_to_scrape = json.load(data_file)
