@@ -1,7 +1,16 @@
 import json
+import os
 
+import mysql.connector
 import requests
 from bs4 import BeautifulSoup
+
+database_connection = mysql.connector.connect(
+    host=os.getenv("host"),
+    user=os.getenv("user"),
+    password=os.getenv("password"),
+    database=os.getenv("database")
+)
 
 base_url = "https://vipergirls.to"
 with open("links_to_img_urls.json", "r") as data_file:
