@@ -1,5 +1,3 @@
-import json
-
 import requests
 from bs4 import BeautifulSoup
 
@@ -7,16 +5,16 @@ base_url = "https://vipergirls.to"
 next_page_url = thread_url = f"{base_url}/threads/5842541-VlXEN-Photo-Collection"
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 data_from_pages = {}
-try:
-    with open("data.json", "r") as data_file:
-        data_from_pages = json.load(data_file)
-except FileNotFoundError:
-    with open("data.json", "w") as data_file:
-        json.dump(data_from_pages, data_file, indent=4)
-try:
-    next_page_url = data_from_pages.get(thread_url).get("next_url_to_visit")
-except AttributeError:
-    data_from_pages[thread_url] = {}
+# try:
+#     with open("data.json", "r") as data_file:
+#         data_from_pages = json.load(data_file)
+# except FileNotFoundError:
+#     with open("data.json", "w") as data_file:
+#         json.dump(data_from_pages, data_file, indent=4)
+# try:
+#     next_page_url = data_from_pages.get(thread_url).get("next_url_to_visit")
+# except AttributeError:
+#     data_from_pages[thread_url] = {}
 while next_page_url:
     res = requests.get(next_page_url, headers=headers)
     res.raise_for_status()
@@ -31,16 +29,16 @@ while next_page_url:
                 }
         } for post in soup.select("#postlist > ol#posts > li.postcontainer blockquote.postcontent.restore")
         if post.select_one("div > font") and post.select("a > img")]
-    data_from_pages[thread_url][next_page_url] = post_contents
+    # data_from_pages[thread_url][next_page_url] = post_contents
     next_page_url_tag = soup.select_one("#pagination_bottom .prev_next > a[title~='Next']")
     if next_page_url_tag:
         next_page_url = f"{base_url}/{next_page_url_tag.get('href')}"
     else:
         break
     print(next_page_url)
-    data_from_pages[thread_url]["next_url_to_visit"] = next_page_url
-    with open("data.json", "r") as data_file:
-        data = json.load(data_file)
-    data.update(data_from_pages)
-    with open("data.json", "w") as data_file:
-        json.dump(data, data_file, indent=4)
+    # data_from_pages[thread_url]["next_url_to_visit"] = next_page_url
+    # with open("data.json", "r") as data_file:
+    #     data = json.load(data_file)
+    # data.update(data_from_pages)
+    # with open("data.json", "w") as data_file:
+    #     json.dump(data, data_file, indent=4)
