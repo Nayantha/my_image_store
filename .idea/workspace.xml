@@ -8,7 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a61a532-0b85-400c-800b-78600e91aa4c" name="Changes" comment="add links to scrape data from." />
+    <list default="true" id="8a61a532-0b85-400c-800b-78600e91aa4c" name="Changes" comment="change link.">
+      <change beforePath="$PROJECT_DIR$/links_to_img_urls.json" beforeDir="false" afterPath="$PROJECT_DIR$/links_to_img_urls.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,23 +30,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Tutorials/Python/my_image_store&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Tutorials/Python/my_image_store",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="my_image_store" />
@@ -52,6 +59,10 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="host" value="localhost" />
+        <env name="user" value="root" />
+        <env name="password" value="060090N@a0" />
+        <env name="database" value="adult_db" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -81,118 +92,7 @@
       <workItem from="1693569109028" duration="1568000" />
       <workItem from="1693570786859" duration="56000" />
       <workItem from="1693571076756" duration="540000" />
-    </task>
-    <task id="LOCAL-00001" summary="Initial Commit.">
-      <created>1693462703390</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1693462703390</updated>
-    </task>
-    <task id="LOCAL-00002" summary="add pycharm ide files to gitignore list.">
-      <created>1693462750212</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1693462750212</updated>
-    </task>
-    <task id="LOCAL-00003" summary="remove default code.">
-      <created>1693462926328</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1693462926328</updated>
-    </task>
-    <task id="LOCAL-00004" summary="add a file to describe how the data generated is stored.">
-      <created>1693463044007</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1693463044007</updated>
-    </task>
-    <task id="LOCAL-00005" summary="add visual representation of data.">
-      <created>1693463552774</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1693463552774</updated>
-    </task>
-    <task id="LOCAL-00006" summary="ide auto updated file.">
-      <created>1693463681296</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1693463681296</updated>
-    </task>
-    <task id="LOCAL-00007" summary="ide auto updated file.">
-      <created>1693467031779</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1693467031779</updated>
-    </task>
-    <task id="LOCAL-00008" summary="ide auto updated file.">
-      <created>1693474943281</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1693474943281</updated>
-    </task>
-    <task id="LOCAL-00009" summary="ide auto updated file.">
-      <created>1693475041799</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1693475041799</updated>
-    </task>
-    <task id="LOCAL-00010" summary="add the main logic in simple format.">
-      <created>1693475065526</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1693475065526</updated>
-    </task>
-    <task id="LOCAL-00011" summary="ide auto updated file.">
-      <created>1693475276607</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1693475276607</updated>
-    </task>
-    <task id="LOCAL-00012" summary="get the first page.">
-      <created>1693475414284</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1693475414284</updated>
-    </task>
-    <task id="LOCAL-00013" summary="ide auto updated file.">
-      <created>1693475958427</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1693475958427</updated>
-    </task>
-    <task id="LOCAL-00014" summary="add BeautifulSoup and get the tags needed.">
-      <created>1693476285099</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1693476285099</updated>
-    </task>
-    <task id="LOCAL-00015" summary="move file to .idea file.">
-      <created>1693478617082</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1693478617082</updated>
-    </task>
-    <task id="LOCAL-00016" summary="add next page url and fine tune drilling to image links.">
-      <created>1693478651704</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1693478651704</updated>
+      <workItem from="1693573531187" duration="3480000" />
     </task>
     <task id="LOCAL-00017" summary="add json read update write methods.">
       <created>1693479562461</created>
@@ -425,7 +325,119 @@
       <option name="project" value="LOCAL" />
       <updated>1693573362003</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="simplify filtering image links.">
+      <created>1693574085289</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1693574085289</updated>
+    </task>
+    <task id="LOCAL-00051" summary="remove json related operations.">
+      <created>1693574161340</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1693574161340</updated>
+    </task>
+    <task id="LOCAL-00052" summary="load the links that have to scrape.">
+      <created>1693574244530</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1693574244530</updated>
+    </task>
+    <task id="LOCAL-00053" summary="load the first link.">
+      <created>1693574286044</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1693574286044</updated>
+    </task>
+    <task id="LOCAL-00054" summary="create mysql connection.">
+      <created>1693574601694</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1693574601694</updated>
+    </task>
+    <task id="LOCAL-00055" summary="create mysql connection.">
+      <created>1693574785082</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1693574785082</updated>
+    </task>
+    <task id="LOCAL-00056" summary="add database cursor.">
+      <created>1693574917144</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1693574917144</updated>
+    </task>
+    <task id="LOCAL-00057" summary="replace image and title structure to tuple.">
+      <created>1693575073232</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1693575073232</updated>
+    </task>
+    <task id="LOCAL-00058" summary="add insert sql command.">
+      <created>1693575422167</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1693575422167</updated>
+    </task>
+    <task id="LOCAL-00059" summary="complete the rest of the sql command.">
+      <created>1693575468511</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1693575468512</updated>
+    </task>
+    <task id="LOCAL-00060" summary="switch two values.">
+      <created>1693575519239</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1693575519239</updated>
+    </task>
+    <task id="LOCAL-00061" summary="add url to scrape data.">
+      <created>1693575558656</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1693575558656</updated>
+    </task>
+    <task id="LOCAL-00062" summary="send data to sel table.">
+      <created>1693575635426</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1693575635427</updated>
+    </task>
+    <task id="LOCAL-00063" summary="commit changes.">
+      <created>1693575655670</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1693575655670</updated>
+    </task>
+    <task id="LOCAL-00064" summary="close connection.">
+      <created>1693575704040</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1693575704040</updated>
+    </task>
+    <task id="LOCAL-00065" summary="change link.">
+      <created>1693576472849</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1693576472850</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,21 +460,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="replace new_data with data_from_pages." />
-    <MESSAGE value="change the existing logic with adding key value to another dict." />
-    <MESSAGE value="change the save to json file inside the while loop." />
-    <MESSAGE value="move the json related logic to the bottom of while loop." />
-    <MESSAGE value="add the next page url to the json file with an empty list as value." />
-    <MESSAGE value="change the type of data_from_pages to an OrderedDict." />
-    <MESSAGE value="undo the type change." />
-    <MESSAGE value="add a key in the file to keep track of the next url to go next." />
-    <MESSAGE value="save the next page url to the file." />
-    <MESSAGE value="remove the data file." />
-    <MESSAGE value="fix selecting previous page url." />
-    <MESSAGE value="find the link that is actually lead to the next page." />
-    <MESSAGE value="code generated file." />
-    <MESSAGE value="move data from related to same threat to its own key." />
-    <MESSAGE value="move data generated to a new parent under thread name." />
     <MESSAGE value="add the preview image link and link to page hosting the high-resolution image." />
     <MESSAGE value="add exception handling to bypass key errors." />
     <MESSAGE value="update next page url." />
@@ -473,12 +470,27 @@
     <MESSAGE value="add data.json file to the gitignore list." />
     <MESSAGE value="change the location of the pycharm ide files." />
     <MESSAGE value="add links to scrape data from." />
-    <option name="LAST_COMMIT_MESSAGE" value="add links to scrape data from." />
+    <MESSAGE value="simplify filtering image links." />
+    <MESSAGE value="remove json related operations." />
+    <MESSAGE value="load the links that have to scrape." />
+    <MESSAGE value="load the first link." />
+    <MESSAGE value="create mysql connection." />
+    <MESSAGE value="add database cursor." />
+    <MESSAGE value="replace image and title structure to tuple." />
+    <MESSAGE value="add insert sql command." />
+    <MESSAGE value="complete the rest of the sql command." />
+    <MESSAGE value="switch two values." />
+    <MESSAGE value="add url to scrape data." />
+    <MESSAGE value="send data to sel table." />
+    <MESSAGE value="commit changes." />
+    <MESSAGE value="close connection." />
+    <MESSAGE value="change link." />
+    <option name="LAST_COMMIT_MESSAGE" value="change link." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/my_image_store$main.coverage" NAME="main Coverage Results" MODIFIED="1693570489981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/my_image_store$main.coverage" NAME="main Coverage Results" MODIFIED="1693576292234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
