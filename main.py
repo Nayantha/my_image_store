@@ -32,17 +32,26 @@ while next_page_url:
     res = requests.get(next_page_url, headers=headers)
     res.raise_for_status()
     soup = BeautifulSoup(res.text, "html.parser")
-    post_contents = [
-        {
-            "title": post.select_one("div > font").get_text(),
-            "image_links":
-                {
-                    "image_link": post.select_one("a").get("href"),
-                    "preview_image_link": post.select_one("a").select_one("img").get("src")
-                }
-        } for post in soup.select("#postlist > ol#posts > li.postcontainer blockquote.postcontent.restore")
-        if post.select_one("div > font") and post.select("a > img")]
+    # post_contents = [
+    #     {
+    #         "title": post.select_one("div > font").get_text(),
+    #         "image_links":
+    #             {
+    #                 "image_link": post.select_one("a").get("href"),
+    #                 "preview_image_link": post.select_one("a").select_one("img").get("src")
+    #             }
+    #     } for post in soup.select("#postlist > ol#posts > li.postcontainer blockquote.postcontent.restore")
+    #     if post.select_one("div > font") and post.select("a > img")]
     # data_from_pages[thread_url][next_page_url] = post_contents
+    post_contents = [
+        (
+            post.select_one("div > font").get_text(),
+            post.select_one("a").get("href"),
+            post.select_one("a").select_one("img").get("src")
+        )
+        for post in soup.select("#postlist > ol#posts > li.postcontainer blockquote.postcontent.restore")
+        if post.select_one("div > font") and post.select("a > img")
+    ]
     next_page_url_tag = soup.select_one("#pagination_bottom .prev_next > a[title~='Next']")
     if next_page_url_tag:
         next_page_url = f"{base_url}/{next_page_url_tag.get('href')}"
