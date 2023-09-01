@@ -45,6 +45,7 @@ while next_page_url:
     # data_from_pages[thread_url][next_page_url] = post_contents
     post_contents = [
         (
+            next_page_url,
             post.select_one("div > font").get_text(),
             post.select_one("a").get("href"),
             post.select_one("a").select_one("img").get("src")
