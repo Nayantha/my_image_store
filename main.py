@@ -52,7 +52,8 @@ while next_page_url:
         for post in soup.select("#postlist > ol#posts > li.postcontainer blockquote.postcontent.restore")
         if post.select_one("div > font") and post.select("a > img")
     ]
-    sql = "INSERT INTO images_from_url (url, title, preview_image_link, high_resolution_image_link)"
+    sql = "INSERT INTO images_from_url (url, title, preview_image_link, high_resolution_image_link) " \
+          "VALUES (%s, %s, %s, %s)"
     next_page_url_tag = soup.select_one("#pagination_bottom .prev_next > a[title~='Next']")
     if next_page_url_tag:
         next_page_url = f"{base_url}/{next_page_url_tag.get('href')}"
