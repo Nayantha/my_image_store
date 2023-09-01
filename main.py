@@ -24,12 +24,11 @@ while next_page_url:
     post_contents = [
         {
             "title": post.select_one("div > font").get_text(),
-            "image_links": [
+            "image_links":
                 {
-                    "image_link": a_tag.get("href"),
-                    "preview_image_link": a_tag.select_one("img").get("src")
-                } for a_tag in post.select("a") if a_tag.select("img")
-            ]
+                    "image_link": post.select_one("a").get("href"),
+                    "preview_image_link": post.select_one("a").select_one("img").get("src")
+                }
         } for post in soup.select("#postlist > ol#posts > li.postcontainer blockquote.postcontent.restore")
         if post.select_one("div > font") and post.select("a > img")]
     data_from_pages[thread_url][next_page_url] = post_contents

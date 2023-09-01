@@ -8,10 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a61a532-0b85-400c-800b-78600e91aa4c" name="Changes" comment="change the location of the pycharm ide files.">
-      <change afterPath="$PROJECT_DIR$/links_to_img_urls.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8a61a532-0b85-400c-800b-78600e91aa4c" name="Changes" comment="add links to scrape data from." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,6 +80,7 @@
       <workItem from="1693461868594" duration="14426000" />
       <workItem from="1693569109028" duration="1568000" />
       <workItem from="1693570786859" duration="56000" />
+      <workItem from="1693571076756" duration="540000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit.">
       <created>1693462703390</created>
@@ -420,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693487590020</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="add links to scrape data from.">
+      <created>1693573362003</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1693573362003</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,7 +448,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="add logic to read data from the json file." />
     <MESSAGE value="replace new_data with data_from_pages." />
     <MESSAGE value="change the existing logic with adding key value to another dict." />
     <MESSAGE value="change the save to json file inside the while loop." />
@@ -468,7 +472,8 @@
     <MESSAGE value="add data.json file to gitignore list." />
     <MESSAGE value="add data.json file to the gitignore list." />
     <MESSAGE value="change the location of the pycharm ide files." />
-    <option name="LAST_COMMIT_MESSAGE" value="change the location of the pycharm ide files." />
+    <MESSAGE value="add links to scrape data from." />
+    <option name="LAST_COMMIT_MESSAGE" value="add links to scrape data from." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
