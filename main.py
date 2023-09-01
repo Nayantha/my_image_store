@@ -55,6 +55,10 @@ while next_page_url:
     ]
     sql = "INSERT INTO images_from_url (url, title, high_resolution_image_link, preview_image_link) " \
           "VALUES (%s, %s, %s, %s)"
+    database_cursor.executemany(
+        sql,
+        post_contents
+    )
     next_page_url_tag = soup.select_one("#pagination_bottom .prev_next > a[title~='Next']")
     if next_page_url_tag:
         next_page_url = f"{base_url}/{next_page_url_tag.get('href')}"
@@ -67,3 +71,4 @@ while next_page_url:
     # data.update(data_from_pages)
     # with open("data.json", "w") as data_file:
     #     json.dump(data, data_file, indent=4)
+    break
