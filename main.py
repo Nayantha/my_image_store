@@ -72,3 +72,4 @@ while next_page_url:
     # with open("data.json", "w") as data_file:
     #     json.dump(data, data_file, indent=4)
     break
+database_connection.commit()
