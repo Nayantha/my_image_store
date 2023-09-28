@@ -8,7 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a61a532-0b85-400c-800b-78600e91aa4c" name="Changes" comment="add a link from different site." />
+    <list default="true" id="8a61a532-0b85-400c-800b-78600e91aa4c" name="Changes" comment="add json related logic." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,27 +92,7 @@
       <workItem from="1693571076756" duration="540000" />
       <workItem from="1693573531187" duration="3480000" />
       <workItem from="1693578703745" duration="86000" />
-    </task>
-    <task id="LOCAL-00018" summary="add data file.">
-      <created>1693479701051</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1693479701051</updated>
-    </task>
-    <task id="LOCAL-00019" summary="remove a comment line.">
-      <created>1693479849343</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1693479849343</updated>
-    </task>
-    <task id="LOCAL-00020" summary="remove the rest of comments.">
-      <created>1693479878835</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1693479878835</updated>
+      <workItem from="1695880512049" duration="1824000" />
     </task>
     <task id="LOCAL-00021" summary="rename next_page variable to next_page_url.">
       <created>1693479939321</created>
@@ -436,7 +416,28 @@
       <option name="project" value="LOCAL" />
       <updated>1693578771748</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="add two links.">
+      <created>1695883051281</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1695883051282</updated>
+    </task>
+    <task id="LOCAL-00068" summary="remove db related logic.">
+      <created>1695883159167</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1695883159168</updated>
+    </task>
+    <task id="LOCAL-00069" summary="add json related logic.">
+      <created>1695883341659</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1695883341659</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,9 +460,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="add exception handling to bypass key errors." />
-    <MESSAGE value="update next page url." />
-    <MESSAGE value="generate new data file." />
     <MESSAGE value="add a new visualization hierarchy." />
     <MESSAGE value="complete the new addition." />
     <MESSAGE value="add data.json file to gitignore list." />
@@ -484,7 +482,10 @@
     <MESSAGE value="close connection." />
     <MESSAGE value="change link." />
     <MESSAGE value="add a link from different site." />
-    <option name="LAST_COMMIT_MESSAGE" value="add a link from different site." />
+    <MESSAGE value="add two links." />
+    <MESSAGE value="remove db related logic." />
+    <MESSAGE value="add json related logic." />
+    <option name="LAST_COMMIT_MESSAGE" value="add json related logic." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
