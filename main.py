@@ -1,16 +1,13 @@
-import os
-
-import mysql.connector
 import requests
 from bs4 import BeautifulSoup
 
-database_connection = mysql.connector.connect(
-    host=os.getenv("host"),
-    user=os.getenv("user"),
-    password=os.getenv("password"),
-    database=os.getenv("database")
-)
-database_cursor = database_connection.cursor()
+# database_connection = mysql.connector.connect(
+#     host=os.getenv("host"),
+#     user=os.getenv("user"),
+#     password=os.getenv("password"),
+#     database=os.getenv("database")
+# )
+# database_cursor = database_connection.cursor()
 base_url = "https://vipergirls.to"
 next_page_url = thread_url = f"{base_url}/threads/5842541-VlXEN-Photo-Collection"
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
@@ -50,12 +47,12 @@ while next_page_url:
         for post in soup.select("#postlist > ol#posts > li.postcontainer blockquote.postcontent.restore")
         if post.select_one("div > font") and post.select("a > img")
     ]
-    sql = "INSERT INTO images_from_url (url, title, high_resolution_image_link, preview_image_link) " \
-          "VALUES (%s, %s, %s, %s)"
-    database_cursor.executemany(
-        sql,
-        post_contents
-    )
+    # sql = "INSERT INTO images_from_url (url, title, high_resolution_image_link, preview_image_link) " \
+    #       "VALUES (%s, %s, %s, %s)"
+    # database_cursor.executemany(
+    #     sql,
+    #     post_contents
+    # )
     next_page_url_tag = soup.select_one("#pagination_bottom .prev_next > a[title~='Next']")
     if next_page_url_tag:
         next_page_url = f"{base_url}/{next_page_url_tag.get('href')}"
@@ -69,5 +66,5 @@ while next_page_url:
     # with open("data.json", "w") as data_file:
     #     json.dump(data, data_file, indent=4)
     break
-database_connection.commit()
-database_connection.close()
+# database_connection.commit()
+# database_connection.close()
